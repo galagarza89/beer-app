@@ -1,0 +1,47 @@
+<div class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse pull-right" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/get-beer">Find a Beer</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/beers">All Beers</a>
+        </li>
+      </ul>
+    </div> <!-- end of navbar-collapse div -->
+</div> <!-- end of navbar div -->
+
+
+<div class="container"> 
+
+	<h2 class="beers-header text-center">Beers</h2>
+
+	<div class="row all-beersDiv">
+
+		<div class="col-xs-12 col-md-6 col-lg-4 beer-list" *ngFor = "let beer of beers">
+			<div class="beer-list-content">
+				<div class="beer-content-img">
+					<img class="img-fluid" src={{beer.image_url}}>					
+				</div>
+				<div class="beer-content-text">
+					<h4>{{beer.name}}</h4>
+					<p>{{beer.tagline}}</p>	
+					<a routerLink="/beer/{{beer.id}}"><button class="btn btn-dark">Learn More</button></a>	
+				</div>	
+			</div>
+		</div>
+
+	</div> <!-- end of all-beersDiv -->
+</div> <!-- end of container -->
+
+<footer>
+  <p class="text-center"> &copy; 2018 <a href="https://github.com/galagarza89"> David Galagarza</a></p>
+</footer>
+

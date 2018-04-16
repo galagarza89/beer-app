@@ -1,0 +1,34 @@
+<div class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse pull-right" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/get-beer">Find a Beer</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/beers">All Beers</a>
+        </li>
+      </ul>
+    </div> <!-- end of navbar-collapse div -->
+</div> <!-- end of navbar div -->
+
+<div class="generateBeerDiv">
+	<h4>Looking for a new beer to try?</h4>
+	<p>If the answer is yes, then you have come to the right place! All you need to do is click "Beer Me" below and you will given a random beer that you can check out. Or if you are not in the mood for something new just click no thanks and miss out on the fun.</p>
+	<div class="row text-center">
+		<div class="col-xs-12 col-md-3"></div>	
+		<div class="col-xs-12 col-md-3">
+			<a routerLink="/beer"><button class="btn btn-dark" > Beer me! <i class="fa fa-beer"></i></button></a>
+		</div>
+		<div class="col-xs-12 col-md-3">
+			<a routerLink="/"><button class="btn btn-dark" > No Thanks</button></a>
+		</div>
+		<div class="col-xs-12 col-md-3"></div>
+	</div>
+</div>

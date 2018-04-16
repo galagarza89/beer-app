@@ -1,0 +1,253 @@
+
+/*@import "~bootstrap/dist/css/bootstrap.min.css";
+@import "~font-awesome/css/font-awesome.css";*/
+
+/*************************
+Fonts
+*************************/
+
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P");
+@import url("https://fonts.googleapis.com/css?family=Yeon+Sung");
+
+$header-font-stack: 'Press Start 2P', cursive;
+$num-font-stack:    'Yeon Sung', cursive;  
+
+/*************************
+Colors
+*************************/
+
+$div-bg-color:	    rgb(234, 231, 213);
+$black-color: 		rgb(0, 0, 0);
+$white-color:		rgb(255, 255, 255);
+
+/*************************
+Mixins
+*************************/
+
+@mixin center {
+	position: absolute;
+	left: 50%;
+	top: 40%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	border-radius: 10px;
+}
+
+/*************************
+General
+*************************/
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: rgba($white-color, 0);
+}
+
+/*************************
+Navbar
+*************************/
+
+.dropdown-menu {
+	a {
+		color: $black-color;
+	}
+}
+
+/*************************
+Footer
+*************************/
+
+footer {
+	background-color: $black-color;
+	color: $white-color;
+	height: 75px;
+	padding: 25px 5px;
+	margin-top: 150px;
+	a {
+		color: $white-color;
+	}
+
+}
+
+/*************************
+Home Page
+*************************/
+
+.home-bg-img {
+  background: url('/assets/bg-img.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+h1 {
+	color: $white-color;
+	font-family: $header-font-stack;
+	font-size: 60px;
+	@include center;
+	background-color: $black-color;
+}
+
+/*************************
+Random Beer Page
+*************************/
+
+.generateBeerDiv {
+	width: 70%;
+	padding: 10px;
+	color: $black-color;
+	background-color: $div-bg-color;
+	@include center;
+	top: 45%;
+	button {
+		margin: 10px 0;
+	}
+}
+
+/*************************
+Random Beer Page Result
+*************************/
+
+.random-bg {
+  background: url('/assets/random-bg.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+.beerDiv {
+	padding: 30px 0;
+	margin: 100px auto;
+	background-color: $div-bg-color;
+	h2 {
+		font-size: 3rem;
+		margin: 30px 0;
+	}
+	img {
+		height: 100%;
+	}
+	p {
+		margin-top: 20px;
+	}
+}
+
+.img-div {
+	max-height: 600px;
+}
+
+.info {
+	margin: 30px 0;
+}
+
+.info span {
+	font-family: $num-font-stack;
+}
+
+.food-pairings {
+	padding-top: 15px;
+	margin: 20px 0;
+	li {
+		list-style: none;
+		margin: 10px 0;
+	}
+	h3 {
+		margin-bottom: 15px;
+	}
+}
+
+.food-pairings li {
+	list-style: none;
+}
+
+.first-brewed {
+	max-width: 400px;
+	padding-top: 5px;
+	border: 3px solid #000;
+	margin: 0 auto 15px;
+	span {
+		font-family: $num-font-stack;
+	}
+} 
+
+
+/*************************
+All Beers Page 
+*************************/
+
+.beers-bg {
+  background: url('/assets/beerWall.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+.beers-header {
+	font-family: $header-font-stack;
+	font-size: 3rem;
+	color: $white-color;
+	margin: 100px auto 20px;
+	width: 70%;
+	background-color: $black-color;
+}
+
+.beer-list {
+	margin: 15px auto;
+}
+
+.beer-list-content {
+	height: 330px;
+	width: 100%;
+	background-color: $div-bg-color;
+	border-radius: 2%;
+	padding: 5px;
+	margin: 0 auto;
+	img {
+		max-width: 85px;
+		max-height: 300px;
+	} 
+}
+
+.beer-list-content div {
+	display: inline-block;
+}
+
+.beer-content-text {
+	margin-left: 20px;
+	height: 160px;
+	width: 60%;
+	word-wrap: break-word;
+	button {
+		margin-top: 10px;
+	}
+}
+
+
+
+
+/*@media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
+	.generateBeerDiv {
+		top: 70%;
+	}	
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
